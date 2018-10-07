@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sociologia</title>
+  <link rel="stylesheet" href="/bootstrap.min.2e858bcc.css">
+  <link rel="stylesheet" href="/all.min.d92a794a.css">
+  <link rel="stylesheet" href="/colors.2ec7068f.css">
+  <link rel="stylesheet" href="/effects.6b1ef6df.css">
+  <link rel="stylesheet" href="/header.d390d9f1.css">
+  <link rel="shortcut icon" href="/logo.de01bb0e.png" type="image/x-icon">
+  <link rel="stylesheet" href="/homePage.dd6ae363.css">
+<script src="/bootstrap.min.2e858bcc.js"></script><script src="/all.min.d92a794a.js"></script><script src="/colors.2ec7068f.js"></script><script src="/effects.6b1ef6df.js"></script><script src="/header.d390d9f1.js"></script><script src="/homePage.dd6ae363.js"></script><script src="/about.js"></script></head>
+<body>
+  <div class="d-flex flex-column align-items-center master-container">
+    <header class="d-flex flex-row-reverse mt-2 flex-direction-center justify-content-center container-fluid">
+      <nav class="navbar navbarSup container-fluid">
+        <div class="container-fluid">
+          <div class="navbar-header"><i class="navbar-toggle collapsed fas fa-bars" data-toggle="collapse" data-target="#alignment" aria-expanded="false"></i></div>
+          <div class="d-flex justify-content-center logo"><img src="/logo.de01bb0e.png" width="250px" height="175px"></div>
+          <div></div>
+          <div class="collapse navbar-collapse" id="alignment">
+            <hr class="w-75">
+            <ul class="nav navbar-nav d-flex flex-row justify-content-center">
+              <li class="mr-4"><a href="/index.html">Página Inicial</a></li>
+              <li class="mr-4"><a href="/pages/about.html">Sobre nós</a></li>
+              <li class="mr-4"><a href="/pages/feed.html">Feed de Notícias</a></li>
+              <li class="mr-4"><a href="/pages/report.html">Reportar Caso</a></li>
+              <li class="mr-4"><a href="/pages/statistics.html">Estatisticas</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="carousel slide w-100" id="carousel" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner d-flex justify-content-center align-items-center">
+        <div class="txt-fixed">
+          <div class="d-flex justify-content-center flex-column align-items-center"><a href="/pages/about.html">Project Name</a>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="carousel-item active"><img class="d-block w-100 imgCarousel" src="/firstImg.7d12600b.png" alt="First slide"></div>
+        <div class="carousel-item"><img class="d-block w-100 imgCarousel" src="/secondImg.ee3514ef.png" alt="Second slide"></div>
+        <div class="carousel-item"><img class="d-block w-100 imgCarousel" src="/thirdImg.9d82cc8b.png" alt="Third slide"></div>
+      </div><a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+    </div>
+    <div class="feed container-fluid d-flex flex-column">
+      <h2 class="ml-4">Feed</h2>
+      <div class="interation d-flex flex-row">
+        <div class="w-75" id="map">
+          <div class="content" style="padding: 2% 2%;">
+            <div id="mapholder"></div>
+            <script src="http://maps.google.com/maps/api/js?sensor=false" style="margin-bottom: 2%;"></script>
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                <div class="mdl-textfield__expandable-holder"></div>
+              </div>
+            </form>
+            <script>var getLocation = function getLocation() {
+  return navigator.geolocation ? navigator.geolocation.getCurrentPosition(showPosition) : alert("Geolocalização não suportada.");
+};
+
+var showPosition = function showPosition(position) {
+  latlon = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  mapholder = document.getElementById('mapholder');
+  mapholder.style.height = '500px';
+  mapholder.style.width = '80%';
+  var myOptions = {
+    center: latlon,
+    zoom: 17,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    mapTypeControl: false,
+    navigationControlOptions: {
+      style: google.maps.NavigationControlStyle.SMALL
+    }
+  };
+  var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+  var marker = new google.maps.Marker({
+    position: latlon,
+    map: map,
+    title: "Você está Aqui!"
+  });
+};
+
+getLocation();
+showPosition(position); //trocar x.innerHTML por var latitude e var longitude;</script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbNFr-jy82ooXNqIy_XuTzRgYtANcPkzY&amp;callback=initMap" async="" defer=""></script>
+          </div>
+        </div>
+        <div class="optionsReport w-50 mt-5">
+          <h3>Tipo de violencia</h3>
+          <hr>
+          <ul class="list-group w-150 d-flex"><li class="list-group-item itemClick">Loren Ipsun</li>
+<li class="list-group-item itemClick">Loren Ipsun</li>
+<li class="list-group-item itemClick">Loren Ipsun</li>
+<li class="list-group-item itemClick">Loren Ipsun</li>
+          </ul>
+          <button class="btn btn-outline-dark btn-lg btn-block mt-4" type="button">Reportar</button>
+        </div>
+      </div>
+    </div>
+    <footer class="d-flex container-fluid">
+      <div class="collaborators d-flex flex-column w-50">
+        <div class="collaborator d-flex flex-row">
+          <div class="icon d-flex flex-column align-content-center">
+            <div class="person"></div>
+            <h5 class="nameCollaborator">Name</h5>
+          </div>
+          <div class="aboutMe">
+            <p class="descriptionCollaborator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="collaborator d-flex flex-row">
+          <div class="icon">
+            <div class="person"></div>
+            <h5 class="nameCollaborator">Name</h5>
+          </div>
+          <div class="aboutMe">
+            <p class="descriptionCollaborator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="collaborator d-flex flex-row">
+          <div class="icon">
+            <div class="person"></div>
+            <h5 class="nameCollaborator">Name</h5>
+          </div>
+          <div class="aboutMe">
+            <p class="descriptionCollaborator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="collaborator d-flex flex-row">
+          <div class="icon">
+            <div class="person"></div>
+            <h5 class="nameCollaborator">Name</h5>
+          </div>
+          <div class="aboutMe">
+            <p class="descriptionCollaborator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="collaborator d-flex flex-row">
+          <div class="icon">
+            <div class="person"></div>
+            <h5 class="nameCollaborator">Name</h5>
+          </div>
+          <div class="aboutMe">
+            <p class="descriptionCollaborator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="collaborator d-flex flex-row">
+          <div class="icon">
+            <div class="person"></div>
+            <h5 class="nameCollaborator">Name</h5>
+          </div>
+          <div class="aboutMe">
+            <p class="descriptionCollaborator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sugestion w-50">
+        <h1 class="text-dark">Sugestões</h1>
+        <form class="w-75">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input class="form-control" id="name" type="text" required="" placeholder="Digite seu nome">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" id="email" type="email" placeholder="name@example.com" required="">
+          </div>
+          <div class="form-group">
+            <label for="titleForm">Título:</label>
+            <input class="form-control" id="titleForm" type="text" placeholder="Titulo da sugestão">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="sugestion" placeholder="Descrição sugestiva" rows="5"></textarea>
+          </div>
+          <input class="btn btn-outline-success mb-5" type="submit" value="Enviar">
+        </form>
+      </div>
+    </footer>
+    <hr>
+    <div class="bg-dark d-flex justify-content-center align-self-end" style="height:30px;">
+      <p class="text-white">Copyright &copy;</p>
+    </div>
+  </div>
+  <script src="/jquery.slim.min.bb670619.js"></script>
+  <script src="/popper.min.a5fd241f.js"></script>
+  <script src="/bootstrap.min.45389b0b.js"></script>
+  <script src="/handlebars.min.722df76d.js"></script>
+  <script src="/master.bbecdf1e.js"></script>
+</body>

@@ -1,0 +1,126 @@
+extends master.pug
+block head
+    link(rel="stylesheet" href="css/homePage.css")
+block content
+    div#carousel.carousel.slide.w-100(data-ride="carousel")
+        ol.carousel-indicators
+            li.active(data-target="#carousel" data-slide-to="0")
+            li(data-target="#carousel" data-slide-to="1")
+            li(data-target="#carousel" data-slide-to="2")
+        div.carousel-inner.d-flex.justify-content-center.align-items-center
+            div.txt-fixed
+                div.d-flex.justify-content-center.flex-column.align-items-center
+                    a(href="./pages/about.html") Project Name
+                    p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.carousel-item.active
+                img.d-block.w-100.imgCarousel(src="./img/firstImg.png" alt="First slide")
+            div.carousel-item
+                img.d-block.w-100.imgCarousel(src="./img/secondImg.png" alt="Second slide")
+            div.carousel-item
+                img.d-block.w-100.imgCarousel(src="./img/thirdImg.png" alt="Third slide")
+        a.carousel-control-prev(href="#carousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only Previous
+        a.carousel-control-next(href="#carousel" role="button" data-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only Next
+    div.feed.container-fluid.d-flex.flex-column
+        h2.ml-4 Feed
+        div.interation.d-flex.flex-row
+            div#map.w-75
+                div.content(style="padding: 2% 2%;")
+                    div#mapholder
+                    script(src="http://maps.google.com/maps/api/js?sensor=false" style="margin-bottom: 2%;")
+                    form(action="#")
+                        div.mdl-textfield.mdl-js-textfield.mdl-textfield--expandable
+                            div.mdl-textfield__expandable-holder
+                    script.
+                        var getLocation = ()=> (navigator.geolocation)?navigator.geolocation.getCurrentPosition(showPosition):alert("Geolocalização não suportada.");
+                        var showPosition = function(position){
+                            latlon=new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                            mapholder=document.getElementById('mapholder');
+                            mapholder.style.height='500px';
+                            mapholder.style.width='80%';
+
+                            var myOptions={
+                                center:latlon,
+                                zoom:17,
+                                mapTypeId:google.maps.MapTypeId.ROADMAP,
+                                mapTypeControl:false,
+                                navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+                            };
+                            var map=new google.maps.Map(document.getElementById("mapholder"),myOptions);
+                            var marker=new google.maps.Marker({position:latlon,map:map,title:"Você está Aqui!"});
+                        }
+
+                        getLocation();
+                        showPosition(position);
+                            //trocar x.innerHTML por var latitude e var longitude;
+                    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbNFr-jy82ooXNqIy_XuTzRgYtANcPkzY&callback=initMap" async defer)
+
+            div.optionsReport.w-50.mt-5
+                h3 Tipo de violencia
+                hr
+                ul.list-group.w-150.d-flex
+                    <li class="list-group-item itemClick">Loren Ipsun</li>
+                    <li class="list-group-item itemClick">Loren Ipsun</li>
+                    <li class="list-group-item itemClick">Loren Ipsun</li>
+                    <li class="list-group-item itemClick">Loren Ipsun</li>
+                button.btn.btn-outline-dark.btn-lg.btn-block.mt-4(type="button") Reportar
+    footer.d-flex.container-fluid
+        div.collaborators.d-flex.flex-column.w-50
+            div.collaborator.d-flex.flex-row
+                div.icon.d-flex.flex-column.align-content-center
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        div.sugestion.w-50
+            h1.text-dark Sugestões
+            form.w-75
+                div.form-group
+                    label(for="name") Nome:
+                    input.form-control#name(type="text" required placeholder="Digite seu nome")
+                div.form-group
+                    label(for="email") Email:
+                    input.form-control#email(type="email" placeholder="name@example.com" required)
+                div.form-group
+                    label(for="titleForm") Título:
+                    input.form-control#titleForm(type="text" placeholder="Titulo da sugestão")
+                div.form-group
+                    textarea.form-control#sugestion(placeholder="Descrição sugestiva" rows="5")
+                input.btn.btn-outline-success.mb-5(type="submit" value="Enviar")
+    hr
+    div.bg-dark.d-flex.justify-content-center.align-self-end(style="height:30px;")
+        p.text-white Copyright &copy;

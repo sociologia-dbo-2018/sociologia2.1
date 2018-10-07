@@ -1,15 +1,18 @@
 doctype html
 html(lang='pt-BR')
 head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width initial-scale=1.0')
-  meta(http-equiv='X-UA-Compatible' content='ie=edge')
-  title Hello Pug
-  link(rel='stylesheet' href='./node_modules/bootstrap/dist/css/bootstrap.min.css')
-  link(
-    rel='stylesheet'
-    href='./node_modules/@fortawesome/fontawesome-free/css/all.min.css')
-  link(rel='stylesheet' href='./master.sass')
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title Sociologia
+    link(rel='stylesheet' href='./node_modules/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet' href='./node_modules/@fortawesome/fontawesome-free/css/all.min.css')
+           //-link(rel='stylesheet' href='./master.sass')
+    link(rel="stylesheet" href="css/colors.css")
+    link(rel="stylesheet" href="css/effects.css")
+    link(rel="stylesheet" href="css/header.css")
+    link(rel="shortcut icon" href="./logo.png" type="image/x-icon")
+    block head
 body
   div.d-flex.flex-column.align-items-center.master-container
     header.d-flex.flex-row-reverse.mt-2.flex-direction-center.justify-content-center.container-fluid
@@ -39,7 +42,7 @@ body
                 a(href="./pages/report.html") Reportar Caso
               li.mr-4
                 a(href="./pages/statistics.html") Estatisticas
-          
+
     block content
 
   script(src='./node_modules/jquery/dist/jquery.slim.min.js')
