@@ -2,43 +2,20 @@
     border-top: solid 1px rgba(0, 0, 0, 0.1);
     padding-top: 1%;
 }
-h2.ml-4 {
-    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
-    padding: 1%;
-}
 
 h1 {
     align-items: center;
 }
 
-#carousel,
-.carousel-indicators,
-.carousel-inner {
-    max-height: 400px;
-}
-
-.imgCarousel {
-    transition: 1s opacity;
-}
-
-.imgCarousel:hover {
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.txt-fixed {
-    position: absolute;
-    z-index: 1;
-}
-
-.txt-fixed>div>a {
+.project > a {
     text-decoration: none;
-    color: rgba(182, 182, 182, 0.575);
+    color: rgba(20, 20, 20, 0.801);
     font-weight: bold;
     font-size: 2em;
 }
 
-.txt-fixed>div>p {
-    font-weight: bold;
+.project > p {
+    font-weight: bolder;
+    color: rgba(48, 48, 48, 0.74);
     max-width: 78ch;
 }
