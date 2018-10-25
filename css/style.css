@@ -20,7 +20,6 @@ header {
     border-right: solid 1px rgba(0, 0, 0, 0.1);
 }
 .collaborator {
-    border-bottom: solid 1px rgba(0,0,0,0.4);
     width:95%;
     padding-top: 1%;
 }
