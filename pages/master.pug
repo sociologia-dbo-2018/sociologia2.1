@@ -1,0 +1,57 @@
+doctype html
+html(lang='pt-BR')
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' href='../node_modules/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet' href='../node_modules/@fortawesome/fontawesome-free/css/all.min.css')
+           //-link(rel='stylesheet' href='./master.sass')
+    link(rel="stylesheet" href="../css/colors.css")
+    link(rel="stylesheet" href="../css/effects.css")
+    link(rel="stylesheet" href="../css/header.css")
+    link(rel="stylesheet" href="../css/footer.css")
+    link(rel="shortcut icon" href="../img/logo.png" type="image/x-icon")
+    block head
+body
+  div.d-flex.flex-column.align-items-center.master-container
+    header.d-flex.flex-row-reverse.mt-2.flex-direction-center.justify-content-center.container-fluid
+      nav.navbar.navbarSup.container-fluid
+        div.container-fluid
+          div.navbar-header
+            i.navbar-toggle.collapsed.fas.fa-bars(
+              data-toggle="collapse"
+              data-target="#alignment"
+              aria-expanded="false")
+          div.d-flex.justify-content-center.logo
+            a(href="./index.pug")
+                img(
+                src="../img/logo.png"
+                width="250px"
+                height="175px"
+                href="./index.pug")
+          div
+          div.collapse.navbar-collapse(id="alignment")
+            hr.w-75
+            ul.nav.navbar-nav.d-flex.flex-row.justify-content-center
+              li.mr-4
+                a(href="./index.pug") Página Inicial
+              li.mr-4
+                a(href="./about.pug") Sobre nós
+              li.mr-4
+                a(href="./feed.pug") Feed de Notícias
+              li.mr-4
+                a(href="./report.html") Reportar Caso
+              li.mr-4
+                a(href="./statistics.html") Estatisticas
+    block content
+
+    div.bg-dark.d-flex.justify-content-center.w-100
+        p.text-white Copyright &copy;
+
+  script(src='../node_modules/jquery/dist/jquery.slim.min.js')
+  script(src='../node_modules/popper.js/dist/popper.min.js')
+  script(src='../node_modules/bootstrap/dist/js/bootstrap.min.js')
+  script(src='../node_modules/handlebars/dist/handlebars.min.js')
+
+  script(src='../master.ts')

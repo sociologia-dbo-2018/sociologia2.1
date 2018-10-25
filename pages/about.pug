@@ -1,0 +1,59 @@
+extends master.pug
+block head
+    title Sobre Nós
+    link(rel="stylesheet" href="../css/aboutPage.css")
+block content
+    div.description.d-flex.flex-column.align-items-center
+        h2.d-flex.justify-content-center.mt-5 O Projeto
+        p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    hr.w-50
+    div.colaborators.d-flex.flex-column.mt-3
+        h3.text-center.mb-5 Colaboradores
+        div.d-flex.justify-content-around.mb-5.flex-wrap
+            div.collaborator.d-flex.flex-column.align-self-center
+                div.icon.align-self-center
+                    div(src="#").ilustration
+                    h5.justify-content-center.d-flex Name
+                div.aboutMe
+                    p.text-center.align-self-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-column.align-self-center
+                div.icon.align-self-center
+                    div(src="#").ilustration
+                    h5.justify-content-center.d-flex Name
+                div.aboutMe
+                    p.text-center.align-self-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-column.align-self-center
+                div.icon.align-self-center
+                    div(src="#").ilustration
+                    h5.justify-content-center.d-flex Name
+                div.aboutMe
+                    p.text-center.align-self-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-column.align-self-center
+                div.icon.align-self-center
+                    div(src="#").ilustration
+                    h5.justify-content-center.d-flex Name
+                div.aboutMe
+                    p.text-center.align-self-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-column.align-self-center
+                div.icon.align-self-center
+                    div(src="#").ilustration
+                    h5.justify-content-center.d-flex Name
+                div.aboutMe
+                    p.text-center.align-self-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    hr.w-100
+    footer.d-flex.column.w-100
+        div.sugestion.d-flex.justify-content-center.w-100
+            form.w-50
+                div.form-group
+                    h1.text-dark.mb-5.mt-2 Sugestões
+                    label(for="name") Nome:
+                    input.form-control#name(type="text" required placeholder="Digite seu nome")
+                div.form-group
+                    label(for="email") Email:
+                    input.form-control#email(type="email" placeholder="name@example.com" required)
+                div.form-group
+                    label(for="titleForm") Título:
+                    input.form-control#titleForm(type="text" placeholder="Titulo da sugestão")
+                div.form-group
+                    textarea.form-control#sugestion(placeholder="Descrição sugestiva" rows="5")
+                input.btn.btn-outline-success.mb-5(type="submit" value="Enviar")

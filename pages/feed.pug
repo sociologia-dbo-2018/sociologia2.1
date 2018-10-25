@@ -1,0 +1,83 @@
+extends master.pug
+block head
+    link(rel="stylesheet" href="../css/feedPage.css")
+    title Feed de Notícias
+block content
+    div.title.container-fluid.d-flex.mt-4.align-items-center.justify-content-around
+        h2.d-flex Feed de Notícias
+        button.btn.btn-outline-dark.btn-lg.btn-block.btn-sm.report(type="button") Reportar
+    hr.w-75
+    div.map.d-flex.justify-content-center.mt-4.mb-4
+        img.w-75.h-75(src="https://rocketz.com.br/assets/store/img-store-cu-map-100123ec35cb58f100158e68b53bcd0c77a7f5120769df584d4aa67bb56e1c8c.jpg")
+    hr.w-100
+    div.rssArea.d-flex.flex-row.w-100.justify-content-center
+        div.rsslocal.w-25.ml-5
+            ul.list-group
+                li.list-group-item Loren 1
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+        div.rssglobal.w-50.mr-5.mb-5
+            ul.list-group
+                li.list-group-item Loren 1
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+    footer.d-flex.container-fluid.mt-5
+        div.collaborators.d-flex.flex-column.w-50
+            div.collaborator.d-flex.flex-row
+                div.icon.d-flex.flex-column.align-content-center
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        div.sugestion.w-50
+            h1.text-dark Sugestões
+            form.w-75
+                div.form-group
+                    label(for="name") Nome:
+                    input.form-control#name(type="text" required placeholder="Digite seu nome")
+                div.form-group
+                    label(for="email") Email:
+                    input.form-control#email(type="email" placeholder="name@example.com" required)
+                div.form-group
+                    label(for="titleForm") Título:
+                    input.form-control#titleForm(type="text" placeholder="Titulo da sugestão")
+                div.form-group
+                    textarea.form-control#sugestion(placeholder="Descrição sugestiva" rows="5")
+                input.btn.btn-outline-success.mb-5(type="submit" value="Enviar")
+
+

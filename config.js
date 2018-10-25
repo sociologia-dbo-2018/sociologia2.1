@@ -1,8 +1,8 @@
 export const config = {
-    apiKey: 'AIzaSyDBX3nYxP997EZgVULeHqv6LXUfEHhFezk',
-    authDomain: 'cobaia-ad99b.firebaseapp.com',
-    databaseURL: 'https://cobaia-ad99b.firebaseio.com',
-    projectId: 'cobaia-ad99b',
-    storageBucket: 'cobaia-ad99b.appspot.com',
-    messagingSenderId: '726486058008'
+    apiKey: 'AIzaSyAY3iTDStDJgPKZhY_TXWNKuKMV7J4UtDg',
+    authDomain: 'sociologia-2018.firebaseapp.com',
+    databaseURL: 'https://sociologia-2018.firebaseio.com',
+    projectId: 'sociologia-2018',
+    storageBucket: 'sociologia-2018.appspot.com',
+    messagingSenderId: '63258068532'
 };
