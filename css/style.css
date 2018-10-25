@@ -2,10 +2,6 @@
     border-top: solid 1px rgba(0, 0, 0, 0.1);
     padding-top: 1%;
 }
-h2.ml-4 {
-    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
-    padding: 1%;
-}
 footer {
     background-color: rgb(226, 226, 226);
     align-items: center;

@@ -20,6 +20,10 @@ body {
     box-shadow: 2px 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+hr {
+    background-color: rgba(75, 75, 75, 0.5);
+}
+
 /* COBAIA */
 
 .person {

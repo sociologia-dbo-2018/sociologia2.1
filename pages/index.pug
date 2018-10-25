@@ -1,6 +1,7 @@
 extends master.pug
 block head
     link(rel="stylesheet" href="../css/homePage.css")
+    link(rel="stylesheet" href="../css/style.css")
 block content
     div.project.d-flex.justify-content-center.flex-column.align-items-center.mt-3
         a(href="./about.pug") Project Name
@@ -11,7 +12,8 @@ block content
         h2.ml-4 Feed
         div.interation.d-flex.flex-row
             div#map.w-75
-                div.content(style="padding: 2% 2%;")
+                img.w-75.h-75(src="https://rocketz.com.br/assets/store/img-store-cu-map-100123ec35cb58f100158e68b53bcd0c77a7f5120769df584d4aa67bb56e1c8c.jpg")
+                //- div.content(style="padding: 2% 2%;")
 
             div.optionsReport.w-50.mt-5
                 h3 Tipo de violencia
