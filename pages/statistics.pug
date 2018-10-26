@@ -1,0 +1,92 @@
+extends master.pug
+block head
+    title Estatísticas
+block content
+    div.container-fluid.d-flex
+        h2.flex-start Dados Estatísticos
+    hr.w-75
+    //- Para graficos
+
+    div.statistics-local.d-flex.flex-column.align-items-center
+        div.d-flex.flex-wrap.justify-content-around
+            //- classe comum a todos .graphics
+            div.graphics.border.border-secondary.p-2.mt-2
+                h3.violencia Violência
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+            div.graphics
+                h3.etnia Etnia
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+            div.graphics
+                h3.idade Idade
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+            div.graphics
+                h3.renda Renda
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+            div.graphics
+                h3.renda Renda
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+        hr.w-50
+        div.download.d-flex.flex-column
+            h4.download-title Você é um 'ciêntista de dados' ou tem interesses? Faça download
+            a(href="#") Leia os termos
+            div.d-flex.justify-content-center.align-self-start
+                input#termos(type="checkbox")
+                label(for="termos") Concordo com os termos acima
+            a.btn.btn-primary.w-25.align-self-end(href="#") Baixar
+
+    footer.d-flex.container-fluid
+        div.collaborators.d-flex.flex-column.w-50
+            div.collaborator.d-flex.flex-row
+                div.icon.d-flex.flex-column.align-content-center
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        div.sugestion.w-50
+            h1.text-dark Sugestões
+            form.w-75
+                div.form-group
+                    label(for="name") Nome:
+                    input.form-control#name(type="text" required placeholder="Digite seu nome")
+                div.form-group
+                    label(for="email") Email:
+                    input.form-control#email(type="email" placeholder="name@example.com" required)
+                div.form-group
+                    label(for="titleForm") Título:
+                    input.form-control#titleForm(type="text" placeholder="Titulo da sugestão")
+                div.form-group
+                    textarea.form-control#sugestion(placeholder="Descrição sugestiva" rows="5")
+                input.btn.btn-outline-success.mb-5(type="submit" value="Enviar")
+

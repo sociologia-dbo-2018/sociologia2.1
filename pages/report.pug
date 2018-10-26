@@ -1,0 +1,70 @@
+extends master.pug
+block head
+    title Reportagem de casos
+block content
+    div.container-fluid.d-flex
+        h2.flex-start Selecione o local:
+    div.d-flex.align-items-center.justify-content-around
+        div.mapa.w-50
+            img(src="https://rocketz.com.br/assets/store/img-store-cu-map-100123ec35cb58f100158e68b53bcd0c77a7f5120769df584d4aa67bb56e1c8c.jpg").w-100
+
+        div.form.d-flex.flex-column.w-50.h-100.justify-content-center.align-items-center
+            //-    Apenas para teste
+            iframe.w-75.h-75(src="https://docs.google.com/forms/d/e/1FAIpQLSe8bn7COblGOXqGBR0FT5Mmu7jNkMb0hJorIacd5FRx9x_-8g/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0") Carregando…
+
+            button.btn.btn-primary.mt-3.w-50(type="submit") Enviar
+
+    footer.d-flex.container-fluid
+        div.collaborators.d-flex.flex-column.w-50
+            div.collaborator.d-flex.flex-row
+                div.icon.d-flex.flex-column.align-content-center
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.collaborator.d-flex.flex-row
+                div.icon
+                    div.person
+                    h5.nameCollaborator Name
+                div.aboutMe
+                    p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        div.sugestion.w-50
+            h1.text-dark Sugestões
+            form.w-75
+                div.form-group
+                    label(for="name") Nome:
+                    input.form-control#name(type="text" required placeholder="Digite seu nome")
+                div.form-group
+                    label(for="email") Email:
+                    input.form-control#email(type="email" placeholder="name@example.com" required)
+                div.form-group
+                    label(for="titleForm") Título:
+                    input.form-control#titleForm(type="text" placeholder="Titulo da sugestão")
+                div.form-group
+                    textarea.form-control#sugestion(placeholder="Descrição sugestiva" rows="5")
+                input.btn.btn-outline-success.mb-5(type="submit" value="Enviar")
